@@ -42,5 +42,10 @@ namespace WindowsFormsApp7
                 passwordlength = length;
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
