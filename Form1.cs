@@ -37,15 +37,10 @@ namespace WindowsFormsApp7
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(textBox2.Text, out int length))
+            if (int.TryParse(setNumberOfPasswordCharacters.Text, out int length))
             {
                 passwordlength = length;
             }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

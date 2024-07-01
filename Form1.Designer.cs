@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.setNumberOfPasswordCharacters = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -49,24 +49,6 @@
             this.groupBox1.Size = new System.Drawing.Size(798, 234);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(21, 56);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(155, 25);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(21, 19);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(750, 20);
-            this.textBox2.TabIndex = 3;
             // 
             // button2
             // 
@@ -74,7 +56,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 61);
             this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
+            this.button2.Text = "Скопировать пароль";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -84,7 +66,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 61);
             this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
+            this.button1.Text = "Сгенерировать пароль";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -93,20 +75,39 @@
             this.textBox1.Location = new System.Drawing.Point(21, 30);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(750, 48);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(21, 56);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(155, 25);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Задать";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // setNumberOfPasswordCharacters
+            // 
+            this.setNumberOfPasswordCharacters.AccessibleDescription = "qqqq";
+            this.setNumberOfPasswordCharacters.AccessibleName = "йййq";
+            this.setNumberOfPasswordCharacters.Location = new System.Drawing.Point(21, 19);
+            this.setNumberOfPasswordCharacters.Name = "setNumberOfPasswordCharacters";
+            this.setNumberOfPasswordCharacters.Size = new System.Drawing.Size(750, 20);
+            this.setNumberOfPasswordCharacters.TabIndex = 3;
+            this.setNumberOfPasswordCharacters.Tag = "1";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.setNumberOfPasswordCharacters);
             this.groupBox2.Location = new System.Drawing.Point(0, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(798, 110);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
             // 
             // Form1
             // 
@@ -132,7 +133,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox setNumberOfPasswordCharacters;
         private System.Windows.Forms.GroupBox groupBox2;
     }
 }
